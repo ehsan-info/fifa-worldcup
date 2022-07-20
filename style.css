@@ -21,6 +21,7 @@ body {
     text-align: center;
     padding: 14px 30px;
     background-color: #ffffff;
+    border: 1px solid #E8E8E8;
     border-radius: 5px;
 }
 
@@ -227,3 +228,5 @@ footer {
 .company-social-lists a:hover {
     color: #F58120;
 }
+
+@media screen and (max-width: 567px) {}
