@@ -31,6 +31,51 @@ body {
     background-color: #F58120;
 }
 
+.animated-button {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #E8E8E8;
+    color: #161616;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.animated-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.animated-button span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.animated-button:hover {
+    color: #ffffff;
+    background-color: #F58120;
+    border: none;
+}
+
+.animated-button:hover span {
+    padding-right: 25px;
+}
+
+.animated-button:hover span::after {
+    opacity: 1;
+    right: 0;
+}
+
 /* top banner section style  */
 .top-banner {
     height: 646px;
@@ -236,6 +281,11 @@ footer {
         margin: 0 20px;
     }
 
+    .animated-button {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
     .button {
         font-size: 14px;
         padding: 6px 15px;
@@ -341,6 +391,11 @@ footer {
         padding: 9px 19px;
         width: 100%;
         margin-right: 15px;
+    }
+
+    .animated-button {
+        font-size: 14px;
+        padding: 9px 19px;
     }
 
     .button:last-child {
