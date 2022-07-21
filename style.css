@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -138,7 +138,6 @@ body {
     color: #161616;
     font-size: 16px;
     line-height: 26px;
-    margin-right: 25px;
 }
 
 .blog-icon i {
@@ -152,7 +151,6 @@ body {
 }
 
 .view-all a {
-    border: 1px solid #b9b9b9;
     display: inline-block;
 }
 
@@ -229,4 +227,257 @@ footer {
     color: #F58120;
 }
 
-@media screen and (max-width: 567px) {}
+/* smaller device  */
+
+@media screen and (max-width: 642px) {
+
+    /* common css for media query  */
+    .container {
+        margin: 0 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+
+    .top-banner-section {
+        width: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .top-banner-section h2 {
+        font-size: 40px;
+        line-height: 43px;
+        margin: 10px 0;
+    }
+
+    .top-banner-section p {
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 355px;
+        height: 1.2em;
+        white-space: nowrap;
+    }
+
+    .top-banner-section img {
+        right: 40px;
+        height: auto;
+    }
+
+    .main-body {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .side-menu-section {
+        row-gap: 20px;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .blog-container,
+    .match-container {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+    }
+
+    .channel-link {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+
+    .blog-link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .blog-icon {
+        font-size: 12px;
+        line-height: 20px;
+        margin-right: 15px;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .footer-container {
+        padding-top: 1px;
+    }
+
+    .footer-container h2 {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .company-contact-lists a {
+        font-size: 12px;
+        display: block;
+        margin: 15px 30px;
+    }
+
+    .company-social-lists a {
+        font-size: 14px;
+        margin: 10px;
+    }
+}
+
+/* medium device */
+
+@media screen and (min-width: 643px) and (max-width: 1100px) {
+
+    /* common css for media query */
+    .container {
+        margin: 0 20px;
+    }
+
+    .button {
+        color: #161616;
+        font-size: 14px;
+        padding: 9px 19px;
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .button:last-child {
+        margin-right: 0;
+    }
+
+    .top-banner {
+        height: auto;
+        margin: 40px auto 10px;
+    }
+
+    .top-banner-section {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .top-banner-section h2 {
+        font-size: 45px;
+        line-height: 55px;
+        margin: 0 0 10px 0;
+    }
+
+    .top-banner-section p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 355px;
+        height: 1.2em;
+        white-space: nowrap;
+    }
+
+    .top-banner-section img {
+        right: 0;
+        height: 100%;
+    }
+
+    .main-body {
+        column-gap: 0;
+        flex-direction: column;
+        margin-top: 13px;
+    }
+
+    .side-menu-section {
+        flex-direction: row;
+        row-gap: 0;
+        background-color: transparent;
+        padding: 10px 0;
+        border-radius: 10px;
+        width: auto;
+    }
+
+    /* blog page media query */
+    .blog-container,
+    .match-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .channel-link {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .blog-link {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .blog-icon {
+        font-size: 14px;
+        line-height: 22px;
+        margin-right: 18px;
+    }
+
+    .view-all {
+        display: block;
+        text-align: center;
+    }
+
+    .view-all a {
+        display: inline;
+    }
+
+    footer {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        padding-top: 1px;
+    }
+
+    .footer-container h2 {
+        font-size: 35px;
+        margin: 20px 0;
+    }
+
+    .company-contact-lists a {
+        font-size: 14px;
+        margin: 15px 30px;
+    }
+
+    .company-social-lists a {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    /* upcoming match media query */
+    .match-container {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    .top-banner-section {
+        padding: 100px 85px;
+    }
+
+    .top-banner-section h2 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .side-menu-section {
+        padding: 25px;
+        width: 220px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .match-section {
+        padding: 50px 10px 30px;
+    }
+}
